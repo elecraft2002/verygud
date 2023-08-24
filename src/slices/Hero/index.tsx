@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import Bounded from "@/app/components/Bounded";
 import { richTextComponents } from "@/app/layout";
 import { Content } from "@prismicio/client";

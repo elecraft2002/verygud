@@ -1,0 +1,59 @@
+{
+  "id": "settings",
+  "label": "Settings",
+  "format": "custom",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Title",
+          "placeholder": "Website name",
+          "allowTargetBlank": true,
+          "single": "paragraph"
+        }
+      },
+      "text": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Text",
+          "placeholder": "Text in center",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "favicon_image": {
+        "type": "Image",
+        "config": {
+          "label": "Favicon Image",
+          "constraint": { "width": 48, "height": 48 },
+          "thumbnails": []
+        }
+      },
+      "navbar_image": {
+        "type": "Image",
+        "config": {
+          "label": "Navbar Image",
+          "constraint": { "width": null, "height": null },
+          "thumbnails": [
+            { "name": "Dark", "width": 80, "height": 80 },
+            { "name": "Light", "width": 80, "height": 80 }
+          ]
+        }
+      },
+      "footer_image": {
+        "type": "Image",
+        "config": {
+          "label": "Footer Image",
+          "constraint": {},
+          "thumbnails": [
+            { "name": "Dark", "width": 300, "height": null },
+            { "name": "Light", "width": 300, "height": null }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "socials",
+  "label": "Socials",
+  "format": "custom",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "socials": {
+        "type": "Group",
+        "config": {
+          "label": "Socials",
+          "fields": {
+            "text": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Text",
+                "placeholder": "Social name",
+                "allowTargetBlank": true,
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            },
+            "socials_image": {
+              "type": "Image",
+              "config": {
+                "label": "Socials Image",
+                "constraint": { "width": null, "height": null },
+                "thumbnails": [
+                  { "name": "Light", "width": 80, "height": null },
+                  { "name": "Dark", "width": 80, "height": null }
+                ]
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "Link to social media",
+                "allowTargetBlank": true,
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
